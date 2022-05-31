@@ -1,0 +1,38 @@
+---
+import '../style/style.css';
+---
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Environnement7</title>
+	</head>
+	<body>
+        <div id="pagewidth">
+            <div id="header">
+                <span class="raison">espace environnement</span>
+                <a class="home" href="./" title="vers la page d'accueil"><img src="assets/e7_titre.png" alt="Logo E7" /></a>
+            </div> <!--end of header-->
+            <div id="navigation">
+                <ul>
+                    <li><a class="home" href="./" title="vers la page d'accueil"><span><img src="assets/home.png" alt="Logo e7" width="77" height="50" /></span></a></li>
+                    <li><a class="acade" href="./acade" title="vers la page d'Acade"><span><img src="assets/acade_pt.png" alt="Logo Acade" width="129" height="50" /></span></a></li>
+                    <li><a class="alain" href="./alain" title="vers la page d'Alain Etienne"><img src="assets/alain_pt.png" alt="Logo Alain Etienne" width="129" height="50" /></a></li>
+                    <li><a class="corealis" href="./corealis" title="vers la page de Corealis"><img src="assets/corealis_pt.png" alt="Logo Corealis" width="129" height="50" /></a></li>
+                    <li><a class="geoexpert" href="./geoexpert" title="vers la page de GeoExpert AG"><img src="assets/geoexpert_pt.png" alt="Logo GeoExpert" width="129" height="50" /></a></li>
+                    <li><a class="hydrogeo" href="./hydrogeo" title="vers la page d'HydroGéo Conseils"><img src="assets/hydrogeo_pt.png" alt="Logo HydroGéo" width="129" height="50" /></a></li>
+                    <li><a class="poget" href="./poget" title="vers la page de Poget & Meynet"><img src="assets/poget_pt.png" alt="Logo Poget" width="129" height="50" /></a></li>
+                    <li><a class="viridis" href="./viridis" title="vers la page de Viridis"><img src="assets/viridis_pt.png" alt="Logo Viridis" width="129" height="50" /></a></li>
+                </ul>
+            </div> <!--end of navigation-->
+            <div id="mainbody">
+                <div id="content">
+                    <slot />
+                </div> <!--end of content-->
+            </div> <!--end of mainbody-->
+            <div id="footer">
+                <span>espace environnement e7 - www.environnement7.ch © 2022</span>
+            </div> <!--end of footer-->
+        </div> <!--end of pagewidth-->
+	</body>
+</html>

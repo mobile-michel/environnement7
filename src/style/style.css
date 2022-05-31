@@ -1,0 +1,84 @@
+/* Position elements */
+
+body {
+  text-align: center;
+  font-size: 14px;
+  font-family: Verdana, "Trebuchet MS", sans-serif;}
+  
+#pagewidth {
+  width: 1150px; 
+  text-align: left;  
+  margin-left: auto; 
+  margin-right: auto;}
+
+a img {
+  border: none;}
+
+#header {
+  padding: 34px 0 16px 0;}
+
+#navigation {
+  clear: both;}
+#navigation ul {
+  margin: 0; padding: 0;}
+#navigation li {
+  display: inline;
+  list-style-type: none;}
+#navigation a {
+  border-bottom: 2px solid;
+  height: 30px;}
+
+#content {
+  padding: 0 180px;}
+
+
+/* Colors */
+
+body {
+  color: #444444;}
+a {
+  color: #007639;
+  text-decoration: none;}
+a:hover {
+  text-decoration: underline;}
+
+.raison {
+  color: #007639;
+  font-variant: small-caps;
+  font-size: 30px;
+  letter-spacing: 5px;}
+
+#navigation {
+  border-bottom: 2px solid #007639;}
+#navigation a:hover {
+  border-bottom: 4px solid #007639;}
+#navigation ul.acade a.acade, #navigation ul.alain a.alain,
+#navigation ul.corealis a.corealis, #navigation ul.geoexpert a.geoexpert,
+#navigation ul.hydrogeo a.hydrogeo, #navigation ul.poget a.poget,
+#navigation ul.viridis a.viridis, #navigation ul.home a.home {
+  border-bottom: 3px solid #007639;}
+
+#teaser {
+  font-weight: bold;}
+
+#footer {
+  border-top: 1px solid #007639;
+  margin: 0 180px;
+  padding-top: 5px;
+  padding-bottom: 20px;}
+
+
+/* Espacement */
+
+h2 {
+  font-size: 1.5em;
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  margin-bottom: 5px;}
+
+p {
+  margin-top: 0;
+  line-height: 1.4em;}
+

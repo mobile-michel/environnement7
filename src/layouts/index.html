@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>espace environnemental e7</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="pagewidth">
+  <div id="header">
+    <span class="raison">espace environnement</span>
+    <a class="home" href="index.php?a=home" title="vers la page d'accueil"><img src="logos/e7_titre.png" alt="Logo E7" /></a>
+  </div> <!--end of header-->
+  <div id="navigation">
+    <ul class="<?php
+     $class = $_GET['a'];
+     if ($class == '') {
+     print "home";
+     } else {
+      print "$class";
+      } 
+      ?>">
+    <li><a class="home" href="index.php?a=home" title="vers la page d'accueil"><span><img src="logos/home.png" alt="Logo e7" width="77" height="50" /></span></a></li><li><a class="acade" href="index.php?a=acade" title="vers la page d'Acade"><span><img src="logos/acade_pt.png" alt="Logo Acade" width="129" height="50" /></span></a></li><li><a class="alain" href="index.php?a=alain" title="vers la page d'Alain Etienne"><img src="logos/alain_pt.png" alt="Logo Alain Etienne" width="129" height="50" /></a></li><li><a class="corealis" href="index.php?a=corealis" title="vers la page de Corealis"><img src="logos/corealis_pt.png" alt="Logo Corealis" width="129" height="50" /></a></li><li><a class="geoexpert" href="index.php?a=geoexpert" title="vers la page de GeoExpert AG"><img src="logos/geoexpert_pt.png" alt="Logo GeoExpert" width="129" height="50" /></a></li><li><a class="hydrogeo" href="index.php?a=hydrogeo" title="vers la page d'HydroGéo Conseils"><img src="logos/hydrogeo_pt.png" alt="Logo HydroGéo" width="129" height="50" /></a></li><li><a class="poget" href="index.php?a=poget" title="vers la page de Poget & Meynet"><img src="logos/poget_pt.png" alt="Logo Poget" width="129" height="50" /></a></li><li><a class="viridis" href="index.php?a=viridis" title="vers la page de Viridis"><img src="logos/viridis_pt.png" alt="Logo Viridis" width="129" height="50" /></a></li>
+    </ul>
+  </div> <!--end of navigation-->
+  <div id="mainbody">
+  <div id="content">
+    <?php
+    $file = 'contenu/'.$_GET['a'].'.html';
+    if(file_exists($file)) {
+      include $file;
+    } else {
+      include 'contenu/home.html';
+    }
+    ?>
+  </div> <!--end of content-->
+  </div> <!--end of mainbody-->
+  <div id="footer">
+    <span>espace environnement e7 - www.environnement7.ch © 2011</span>
+  </div> <!--end of footer-->
+  </div> <!--end of pagewidth-->
+</body>
+</html>
